@@ -1,4 +1,4 @@
-from core_conversion.binary import dtb,btd
+from binary import dtb,btd
 def musk_generator(n):
   musk=2**(n)
   return musk
