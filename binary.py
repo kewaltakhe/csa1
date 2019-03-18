@@ -1,4 +1,4 @@
-from core_conversion.hex16 import htd,dth
+from hex16 import htd,dth
 def dtb(num):  #dtb
    num=int(num)
    const=32768
