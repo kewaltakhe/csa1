@@ -1,5 +1,5 @@
-from core.hex16 import dth,htd
-from core.binary import btd,dtb,bth,htb
+from hex16 import dth,htd
+from binary import btd,dtb,bth,htb
 
 def menu():
   doc="\n    This is a python program to convert a number from one number system to another. The operations are listed in the menu.\n\n  Here, a number in binary system is converted using only 16 bits. \n\n---The greatest number in DEC that can be represented into binary is 65535 i.e. FFFF in HEX\n---The greatest number in DEC that can be converted into HEX is 65535.\n "
