@@ -1,6 +1,7 @@
-a=int(input("enter the minuend:"))
-b=int(input("enter the subtrahend:"))
+a=int(input("enter the first_number:"))
+b=int(input("enter the second_number:"))
 option=input("enter 1 for addition:\nenter 2 for subtraction:\n")
+#the sum
 s=0
 if option=="1":
    c=m=0
