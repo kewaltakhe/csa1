@@ -1,7 +1,6 @@
 from binary import dtb,btd
-def musk_generator(n):
-  musk=2**(n)
-  return musk
+def mask_generator(n):
+  return 1<<n
 
 def main():
     num=int(input("Enter a number in decimal <= 65535 :"))
@@ -15,18 +14,18 @@ def main():
        print("ERROR! position of bit should be <= 15.\n\n")
        return 0
     #generate the musk register with the given bit:
-    musk=musk_generator(n_bit)
+    mask=mask_generator(n_bit)
    
     print("\n-->enter 1 for set. \n-->enter 2 for clear.\n-->enter 3 for Exit.")
     op=int(input())
     if op==1:
         operation="set"
-        result=num|musk
+        result=num|mask
         print("\nAfter {0}, the binary form is:{1}\n".format(operation,dtb(result)))
         return 1  #returning 1 as success
     elif op==2:
         operation="clear"
-        result=num&(~musk)
+        result=num&(~mask)
         print("\nAfter {0}, the binary form is:{1}\n".format(operation,dtb(result)))
         return 1  #returning 1 as success
     elif op==3:
